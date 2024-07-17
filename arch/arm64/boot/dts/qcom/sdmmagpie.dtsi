@@ -473,6 +473,7 @@
 	firmware: firmware {
 		android {
 			compatible = "android,firmware";
+			boot_devices = "soc/1d84000.ufshc";
 			vbmeta {
 				compatible = "android,vbmeta";
 				parts = "vbmeta,boot,system,vendor,dtbo,recovery";
@@ -485,7 +486,7 @@
 					type = "erofs";
 					mnt_flags = "ro";
 					fsmgr_flags = "wait,avb";
-					status = "ok";
+					status = "disabled";
 				};
 			};
 		};
